@@ -79,10 +79,10 @@ try:
     elif if_wante == 2:
         print(soup.html.head.title.text)
     elif if_wante == 3:
-        for i in soup.findAll('link'):
+        for i in soup.find_all('link'):
             print(i)
     elif if_wante == 4:
-        for i in soup.findAll('link'):
+        for i in soup.find_all('link'):
             print(i.get("href"))
     elif if_wante == 5:
         print(soup.prettify())
